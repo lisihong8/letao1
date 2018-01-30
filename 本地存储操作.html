@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>本地存储详细解释</title>
+</head>
+<body>
+    <script>
+        
+         /* 
+         
+         1.什么是本地存储???
+           本地存储:是用来存储一些网页的数据 对象 键值对对象 使用键来存储值 获取的时候也要使用键来获取值
+         
+         2.怎么获取 本地存储的数据???
+           localStorage.getItem('键')
+        
+         3.怎么设置 本地存储值数据????
+           localStorage.setItem('键','值')
+         
+         4.怎么去删除本地存储的某个键和值????
+           localStorage.removeItem('键')   
+         
+         5.怎么去清空本地存储的所有的键和值????
+           localStorage.clear();   // 注意注意注意 这个是把所有存储记录都清空掉的  这个需要慎用慎用慎用
+               
+         */
+         var str='["鞋子","袜子","裤子"]';
+         console.log(typeof str); //string
+
+         var arr=JSON.parse(str);
+         console.log(arr);
+
+//示例1：此示例使用 JSON.parse 将 JSON 字符串转换为对象  
+var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';  
+    var contact = JSON.parse(jsontext);  
+    document.write(contact.surname + ", " + contact.firstname + ", "+ contact.phone);  
+
+    </script>
+</body>
+</html>

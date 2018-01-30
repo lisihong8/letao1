@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 3.引入mui的css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <style>
+        html,body{
+            width:100%;
+        }
+        .list{
+            width:100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted  list">
+        <div class="mui-scroll">
+            <a class="mui-control-item mui-active">
+                推荐
+            </a>
+            <a class="mui-control-item">
+                热点
+            </a>
+            <a class="mui-control-item">
+                北京
+            </a>
+            <a class="mui-control-item">
+                社会
+            </a>
+            <a class="mui-control-item">
+                娱乐
+            </a>
+            <a class="mui-control-item">
+                科技
+            </a>
+            <a class="mui-control-item">
+                    科技
+                </a>
+                <a class="mui-control-item">
+                        科技
+                    </a>
+                    <a class="mui-control-item">
+                            科技
+                        </a>
+                        <a class="mui-control-item">
+                                科技
+                            </a>
+                            <a class="mui-control-item">
+                                    科技
+                                </a>
+        </div>
+    </div>
+
+    <!-- 4.引入 mui 的js文件 -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+
+        });
+        var scrollInit = function () {
+
+        };
+        scrollInit.prototype = {
+            scrollinit: function () {
+                mui('.mui-scroll-wrapper').scroll({
+                    deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
